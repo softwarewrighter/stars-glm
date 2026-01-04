@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <canvas id="starfield"></canvas>
+        <div class="controls-panel">
+            <h2>Star Quiz</h2>
+            <div class="stats">
+                <p>Stars Answered: <span id="answered">0</span></p>
+                <p>Correct: <span id="correct">0</span></p>
+                <p>Success Rate: <span id="success-rate">0%</span></p>
+            </div>
+            <div class="controls">
+                <label class="toggle">
+                    <input type="checkbox" id="grid-toggle">
+                    <span>Show Grid</span>
+                </label>
+            </div>
+            <button id="done-btn" class="done-button">Done</button>
+        </div>
+    </div>
+
+    <div id="quiz-popup" class="popup hidden">
+        <div class="popup-content">
+            <h3>What star is this?</h3>
+            <form id="quiz-form">
+                <div id="quiz-options"></div>
+                <button type="submit">Submit</button>
+                <button type="button" id="skip-btn">Skip</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="feedback-popup" class="popup hidden">
+        <div class="popup-content">
+            <div id="feedback-icon"></div>
+            <p id="feedback-text"></p>
+            <button id="close-feedback">Close</button>
+        </div>
+    </div>
+
+    <div id="results-popup" class="popup hidden">
+        <div class="popup-content">
+            <h3>Quiz Complete!</h3>
+            <div class="results">
+                <p>Stars Answered: <span id="final-answered"></span></p>
+                <p>Correct: <span id="final-correct"></span></p>
+                <p>Success Rate: <span id="final-success-rate"></span></p>
+            </div>
+            <button id="reset-btn">Start New Quiz</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

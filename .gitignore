@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Large binary data files
+hyg_v42.csv.gz
+
+# Test screenshots
+test-screenshot-*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
